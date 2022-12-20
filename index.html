@@ -4,24 +4,18 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="./assets/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="./assets/style.css" >
   <title>Hamza's Portfolio</title>
 
 </head>
@@ -30,50 +24,51 @@
 
 
   <!-- Navigation -->
-
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">My Portfolio</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#AboutMe">AboutMe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Resume">Resume</a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#ContactMe">ContactMe</a>
-          </li>
-        </ul>
+  
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"> Web Development Portfolio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="primary-link nav-link" href="#AboutMe">AboutMe</a>
+            </li>
+            <li class="nav-item">
+              <a class="primary-link nav-link" href="#Work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="primary-link nav-link" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="primary-link nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="primary-link nav-link" href="#ContactMe">ContactMe</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>   
-
+    </nav>
+  
   <!-- Hero Section -->
 
-  <header class="masthead">
-    <div class="container h-100">
+  <header class="masthead" id="AboutMe">
+    <div Id="#AboutMe" class="AboutMe">
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">"Web Developer"</h1>
-            <a href="#AboutMe" class="btn btn-outline btn-xl js-scroll-trigger">"I want to make beautiful things, even if nobody cares, as opposed to ugly things. That's my intent."</a>
+            <h1 class="text-black">About Me</h1>
+            <a class="text-black">"I want to make beautiful things, even
+              if nobody cares, as opposed to ugly things. That's my intent."</a>
           </div>
         </div>
-        <div class="col-lg-5  my-auto">
+        <div class="col-lg-5 my-auto" >
           <div class="Profile-pic">
             <img src="./assets/images/Image.jpeg" class="img-fluid" alt="">
           </div>
@@ -82,19 +77,167 @@
     </div>
   </header>
 
-    <!-- Work Section -->
+  <!-- Work Section -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <section class="Work text-center" id="Work">
+    <div class="container">
+      <h2 class="text-black">Work</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="row justify-content-center">
+            <a class="link" target="Prework study guide" href="https://realstranger01.github.io/prework-study-guide/">
+              <h5 class="text-black"> Prework study Guide</h5>
+            </a>
+            <img class="img-fluid rounded-circle mb-5" src="./assets/images/prework study guide.png" alt="">
+            <p class="text-black">"This is my first project i worked on prior to my bootcamp journey "</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row justify-content-center">
+            <a class="link" target="_blank" href="https://realstranger01.github.io/Horiseon/">
+              <h5 class="text-black"> Horeison Marketing Agency</h5>
+            </a>
+            <img class="img-fluid rounded-circle mb-5" src="./assets/images/screenshot.png" alt="">
+            <p class="text-black">"The first project i worked on whilst in bootcamp."</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <a class="link" target="_blank" href="https://realstranger01.github.io/Portfolio/">
+            <h5 class="text-black">My Portfolio</h5>
+          </a>
+          <img class="img-fluid rounded-circle mb-5" src="./assets/images/screenshot portfolio.png" alt="">
+          <p class="text-black">"The second project i worked whilst on bootcamp"</p>
+        </div>
+        <div class="col-4">
+          <a class="link" target="_blank" href="#"></a>
+          <img class="img-fluid rounded-circle mb-5" src="./assets/images/02-portfolio-2.jpg" alt="">
+          <h5 class="text-black"> Calculator</h5>
+          <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam dolores
+            voluptatum corporis officia quaerat sed non sapiente tempora, laudantium laboriosam velit minus? Ut omnis
+            consequatur aliquam quae consequuntur accusamus!</p>
+        </div>
+        <div class="col-4">
+          <a class="link" target="_blank" href="#"></a>
+          <img class="img-fluid rounded-circle mb-3" src="./assets/images/02-portfolio-3.jpg" alt="">
+          <h5 class="text-black"> PastelPuzzles</h5>
+          <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, labore error quis,
+            consequuntur voluptatem veniam aliquid debitis dolorum nisi earum soluta rerum quam asperiores. Quas
+            recusandae nesciunt nobis odio! At.</p>
+        </div>
+        <div class="col-4">
+          <div class="row justify-content-center">
+            <a class="link" target="_blank" href="#"></a>
+            <img class="img-fluid rounded-circle mb-3" src="./assets/images/02-run-buddy.jpg" alt="">
+            <h5 class="text-black"> RunBuddy</h5>
+            <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, labore error quis,
+              consequuntur voluptatem veniam aliquid debitis dolorum nisi earum soluta rerum quam asperiores. Quas
+              recusandae nesciunt nobis odio! At.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--skills-->
+  <section class="Skills text-center" id="Skills">
+    <h2 class="text-black">skills</h2>
+    <div class="row">
+      <div class="col">
+        <a class="link" target="_blank" href="#"></a>
+        <img class="img-fluid rounded-circle mb-3" src="./assets/images/git-github.png" alt="">
+        <h5 class="text-black">github</h5>
+      </div>
+      <div class="col">
+        <a class="link" target="_blank" href="#"></a>
+        <img class="img-fluid rounded-circle mb-3" src="./assets/images/Html.jpeg" alt="">
+        <h5 class="text-black"> HTML</h5>
+      </div>
+      <div class="col-3"></div>
+      <div class="col">
+        <a class="link" target="_blank" href="#"></a>
+        <img class="img-fluid rounded-circle mb-3" src="./assets/images/CSS.jpg" alt="">
+        <h5 class="text-black"> CSS </h5>
+      </div>
+      <div class="col">
+        <a class="link" target="_blank" href="#"></a>
+        <img class="img-fluid rounded-circle mb-3" src="./assets/images/JavaScript_logo_PNG1.png" alt="">
+        <h5 class="text-black"> JavaScript</h5>
+      </div>
+    </div>
+
+  </section>
+
+  <!--contact Me-->
+  <section class="contact-section text-center" id="ContactMe">
+    <h2 class="text-black">ContactMe</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Spotify</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50"><a href="https://open.spotify.com/">Spotify</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">LinkedIn</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50"><a href="https://www.linkedin.com/in/hamza-osman-747a39119/">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">GitHub</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50"><a href="https://github.com/Realstranger01">GitHub</a></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">PhoneNumber</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">555.555.555</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--footer-->
+  <footer>
+    <div class="container text-center">
+      <p>&copy;2022.Hamza Osman.</p>
+
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

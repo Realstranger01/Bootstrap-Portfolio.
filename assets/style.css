@@ -3,6 +3,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-color: grey;
 }
 
 body {
@@ -14,7 +15,8 @@ a {
   transition: all .35s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #fcbd20;
 }
 
@@ -54,15 +56,30 @@ section h2 {
   font-size: 50px;
 }
 
+/* EXTRA SMALL SCREENS*/
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95% !important;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: brown;
+  }
+}
+
+
+
 /* Navigation bar styles ============= */
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color:brown;
+  background-color: brown;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-} 
+}
 
 #mainNav .navbar-brand {
   color: #fdcc52;
@@ -71,52 +88,61 @@ section h2 {
   letter-spacing: 1px;
 }
 
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+  color: #fdcc52;
 }
 
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
-  color: #222222;
+  color: brown;
 }
 
-#mainNav .navbar-nav > li > a {
+#mainNav .navbar-nav>li>a {
   font-size: 11px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-#mainNav .navbar-nav > li > a.active {
+#mainNav .navbar-nav>li>a.active {
   color: #fdcc52 !important;
+  background-color: black;
+}
+
+#mainNav .navbar-nav>li>a.active:hover {
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li > a.active:hover {
-  background-color: transparent;
-}
-
-#mainNav .navbar-nav > li > a,
-#mainNav .navbar-nav > li > a:focus {
+#mainNav .navbar-nav>li>a,
+#mainNav .navbar-nav>li>a:focus {
   color: #222222;
 }
 
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
+#mainNav .navbar-nav>li>a:hover,
+#mainNav .navbar-nav>li>a:focus:hover {
   color: #fdcc52;
 }
 
+/* SMALL SCREENS*/
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 95% !important;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: brown;
+  }
+
+}
+
+
+
 /* Hero section ============= */
 
-header.masthead {
-  position: relative;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
-  background: url("./images/mountain\ view.jpg");
-}
 
 header.masthead .header-content {
   max-width: 500px;
@@ -128,14 +154,131 @@ header.masthead .header-content h1 {
   font-size: 50px;
 }
 
-header.masthead .AboutMe {
+header.masthead .profile-pic {
   max-width: 325px;
   margin-right: auto;
   margin-left: auto;
 }
 
-header.masthead .AboutMe .screen img {
+header.masthead .profile-pic .screen img {
   border-radius: 3px;
 }
 
+/* MEDIUM SCREENS*/
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 95% !important;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: brown;
+  }
+
+}
+
+
+
+
 /* Work section */
+
+section.Work {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+section.Work .Work-item {
+  max-width: 18rem;
+}
+
+section.Work .Work-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+/* LARGE SCREENS*/
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70% !important;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: brown;
+  }
+}
+
+
+
+/* Skills section */
+
+.Skills-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.Skills-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+/* EXTRA lARGE SCREENS*/
+@media only screen and (min-width: 1200px) {
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: brown;
+  }
+}
+
+
+/* ContactMe section */
+
+.contact-section {
+  padding-top: 5rem;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem grey;
+  background-color: brown;
+
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+
+}
+
+.contact-section .card hr {
+  border-color: grey
+}
+
+/* Footer section */
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: black;
+  background-color: grey;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
