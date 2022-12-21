@@ -67,6 +67,19 @@ section h2 {
     padding: 8px 10px;
     color: brown;
   }
+  h1.text-black {
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    
+  }
+  .img-fluid{
+    max-width: 275px;
+    height: 275px;
+    justify-content: space-between;
+  }
+  
 }
 
 
@@ -136,6 +149,14 @@ section h2 {
     padding: 8px 10px;
     color: brown;
   }
+  h1.text-black {
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    
+  }
+  
 
 }
 
@@ -162,6 +183,7 @@ header.masthead .profile-pic {
 
 header.masthead .profile-pic .screen img {
   border-radius: 3px;
+  
 }
 
 /* MEDIUM SCREENS*/
@@ -175,6 +197,7 @@ header.masthead .profile-pic .screen img {
     padding: 8px 10px;
     color: brown;
   }
+ 
 
 }
 
@@ -208,6 +231,8 @@ section.Work .Work-item img {
     padding: 8px 10px;
     color: brown;
   }
+ 
+
 }
 
 
@@ -242,6 +267,7 @@ section.Work .Work-item img {
     color: brown;
   }
 }
+
 
 
 /* ContactMe section */
